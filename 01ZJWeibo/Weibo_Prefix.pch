@@ -1,0 +1,17 @@
+//
+//  Weibo_Prefix.pch
+//  01ZJWeibo
+//
+//  Created by zhoujie on 15/8/19.
+//  Copyright (c) 2015年 zhoujie. All rights reserved.
+//
+
+#ifndef _1ZJWeibo_Weibo_Prefix_pch
+#define _1ZJWeibo_Weibo_Prefix_pch
+
+#import"Common.h"
+#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
+#import "UIViewExt.h"
+
+#endif

@@ -63,7 +63,7 @@
     
     
     //设置上下边界距离
-    //_tableView.contentInset = UIEdgeInsetsMake(64, 0, 49, 0);
+    _tableView.contentInset = UIEdgeInsetsMake(64, 0, 49, 0);
     
     
     [self.view addSubview:_tableView];

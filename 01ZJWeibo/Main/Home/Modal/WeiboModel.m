@@ -27,7 +27,7 @@
                              @"geo":@"geo",
                              @"repostsCount":@"reposts_count",
                              @"commentsCount":@"comments_count",
-                             
+                             @"weiboIdStr":@"idstr"
                              };
     
     return mapAtt;

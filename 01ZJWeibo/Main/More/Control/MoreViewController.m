@@ -43,6 +43,8 @@ static NSString *moreCellId =@"moreCellId";
     _tableView.delegate =self;
     _tableView.backgroundColor= [UIColor clearColor];
     
+    _tableView.contentInset = UIEdgeInsetsMake(64, 0, 49, 0);
+    
     [self.view addSubview:_tableView];
     
     [_tableView registerClass:[MoreTableViewCell class] forCellReuseIdentifier:moreCellId];

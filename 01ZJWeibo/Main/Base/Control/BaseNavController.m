@@ -50,11 +50,14 @@
     
     UIImage *img = [manage getThemeImage:@"bg_home.jpg"];
     self.view.backgroundColor = [UIColor colorWithPatternImage:img];
+    
+    
 }
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
     [self loadImage];
 }
 

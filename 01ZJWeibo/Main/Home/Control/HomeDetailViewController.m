@@ -44,9 +44,11 @@ static NSString *identy = @"CommentCell";
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    [self _createTableView];
+    
     [self _loadData];
     
-    [self _createTableView];
+    
     
     
     
@@ -77,6 +79,7 @@ static NSString *identy = @"CommentCell";
     
     NSString *weiboId = self.weiboModel.weiboIdStr;
     NSMutableDictionary *params = [[NSMutableDictionary alloc] init];
+    
     [params setObject:weiboId forKey:@"id"];
     
     SinaWeibo *sinaWeibo = [self sinaweibo];

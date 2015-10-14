@@ -37,15 +37,18 @@
     [super setAttributes:dataDic];
     
     //01处理微博来源
-    NSString *regex = @">.+<";
+    if (self.source != nil) {
+        
+        NSString *regex = @">.+<";
     
-    NSArray *items = [self.source componentsMatchedByRegex:regex];
-    if (items.count!=0) {
-        NSString *temp = items[0];
-        temp = [temp substringWithRange:NSMakeRange(1, temp.length-2)];
-        self.source = [NSString stringWithFormat:@"来源：%@",temp];
+        NSArray *items = [self.source componentsMatchedByRegex:regex];
+        if (items.count!=0) {
+            NSString *temp = items[0];
+            temp = [temp substringWithRange:NSMakeRange(1, temp.length-2)];
+            self.source = [NSString stringWithFormat:@"来源：%@",temp];
+        }
+    
     }
-    
     //self.text = [NSString stringWithFormat:@"%@%@",@"<image url = '001.png'>",self.text];
     NSString *regex1 = @"\\[\\w+\\]";
     NSArray *faceItems = [self.text componentsMatchedByRegex:regex1];

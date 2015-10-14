@@ -7,6 +7,7 @@
 //
 
 #import "MessageViewController.h"
+#import "DataService.h"
 
 @interface MessageViewController ()
 
@@ -14,24 +15,41 @@
 
 @implementation MessageViewController
 
+-(id)initWithCoder:(NSCoder *)aDecoder
+{
+    
+    self=[super initWithCoder:aDecoder];
+    if (self) {
+        NSLog(@"Message initWithCoder");
+    }
+    return self;
+    
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    
+    
+    //[self loadData];
+    
+    
+    
+    
+    
+    
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+-(void)loadData
+{
+    
+    
+    NSMutableDictionary *params=[[NSMutableDictionary alloc]init];
+    
+    
+    [DataService requestAFUrl:userWeibo httpMethod:@"GET" params:params data:nil block:^(id result) {
+        
+        
+    }];
+    
 }
-
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
-
 @end

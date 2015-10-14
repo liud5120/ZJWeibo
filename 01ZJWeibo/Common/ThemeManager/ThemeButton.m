@@ -40,6 +40,7 @@
 
 }
 
+
 - (void)setNormalImgName:(NSString *)normalImgName{
     if (![_normalImgName isEqualToString:normalImgName]) {
         _normalImgName = [normalImgName copy];

@@ -9,6 +9,9 @@
 #import "BaseViewController.h"
 #import "UIViewController+MMDrawerController.h"
 #import "UIProgressView+AFNetworking.h"
+#import "ThemeButton.h"
+#import "ThemeLabel.h"
+#import "ThemeManager.h"
 
 @implementation BaseViewController
 
@@ -37,6 +40,43 @@
     [mmDraw openDrawerSide:MMDrawerSideRight animated:YES completion:nil];
     
 }
+
+//-(void)setNavButton
+//{
+//    
+//    
+//    //左边按钮
+//    ThemeButton *button=[[ThemeButton alloc]initWithFrame:CGRectMake(0, 0, 88, 44)];
+//    [button setNormalImgName:@"group_btn_all_on_title.png"];
+//    [button setNormalBgImgName:@"button_title.png"];
+//    UIBarButtonItem *leftItem=[[UIBarButtonItem alloc]initWithCustomView:button];
+//    self.navigationItem.leftBarButtonItem=leftItem;
+//    [button addTarget:self action:@selector(letfAction) forControlEvents:UIControlEventTouchUpInside];
+//    button.imageEdgeInsets=UIEdgeInsetsMake(0, 0, 0, 34);
+//    
+//    
+//    
+//    ThemeLabel *label=[[ThemeLabel alloc]initWithFrame:CGRectMake(40, 0, 44, 44)];
+//    label.colorName=@"Mask_Title_color";
+//    label.text=@"设置";
+//    [button addSubview:label];
+//    
+//    
+//    
+//    //右边按钮
+//    ThemeButton *button2=[[ThemeButton alloc]initWithFrame:CGRectMake(0, 0, 44, 44)];
+//    [button2 setNormalImgName:@"button_icon_plus.png"];
+//    [button2 setNormalBgImgName:@"button_m.png"];
+//    UIBarButtonItem *rightItem=[[UIBarButtonItem alloc]initWithCustomView:button2];
+//    self.navigationItem.rightBarButtonItem=rightItem;
+//    [button2 addTarget:self action:@selector(rightAction) forControlEvents:UIControlEventTouchUpInside];
+//    
+//    
+//    
+//    
+//    
+//}
+//
 
 #pragma -mark 设置背景图片
 - (void)setBgImage{

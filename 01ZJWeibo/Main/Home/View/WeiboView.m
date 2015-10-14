@@ -178,8 +178,10 @@
 
 }
 
+
 //设置当前链接文本的颜色
 -(UIColor *)linkColorWithWXLabel:(WXLabel *)wxLabel{
+
     return [[ThemeManager shareInstance] getThemeColor:@"Link_color"];
 }
 

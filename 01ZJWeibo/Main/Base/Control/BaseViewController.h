@@ -20,7 +20,7 @@
     UIWindow *_tipWindow;
     
 }
-
+//-(void)setNavButton;
 - (void)setNavItem;
 //显示加载提示-自己实现
 - (void)showLoading:(BOOL)show;
